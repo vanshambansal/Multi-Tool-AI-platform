@@ -16,7 +16,7 @@ const navItems = [
 
 const Sidebar = ({ Sidebar, setSidebar }) => {
   const { user } = useUser()
-  const { signOut, openUserProfile } = useClerk()  // ✅ added openUserProfile
+  const { signOut, openUserProfile } = useClerk()  
 
   return (
     <div
@@ -39,7 +39,7 @@ const Sidebar = ({ Sidebar, setSidebar }) => {
                 `px-4 py-3 flex items-center gap-3 rounded-lg transition ${
                   isActive
                     ? 'bg-gradient-to-r from-[#3C81F6] to-[#9234EA] text-white'
-                    : 'hover:bg-gray-100'
+                    : 'hover:bg-gray-100 '
                 }`
               }
             >
